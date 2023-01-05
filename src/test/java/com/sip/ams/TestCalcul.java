@@ -12,7 +12,7 @@ class TestCalcul {
 	void testSomme() {
 		Calcul c = new Calcul();
 		int res = c.somme(10, 20);
-		assertEquals(res, 31);
+		assertEquals(res, 30);
 		
 	}
 	
