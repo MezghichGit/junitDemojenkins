@@ -27,7 +27,7 @@ pipeline {
                  steps {  
                  sh 'mvn sonar:sonar -Dsonar.projectKey=demoSonarJenkins -Dsonar.host.url=http://192.168.92.1:9000 -Dsonar.login=5f4f36a3c36e56b4fc8930608d50096bef9f11f4'
                        }
-                    
+		     post{
                     always{
 
 				
@@ -37,6 +37,7 @@ pipeline {
 				
 
 			}
+		     }
 	     }
 
    }
