@@ -14,8 +14,8 @@ pipeline {
                       
                       post{
 
-				failure{
-					emailext attachLog: true, to: "amine.mezghich@gmail.com",
+				always{
+					emailext attachLog: true, to: "barnettalexandre@gmail.com",
 					subject: "jenkins build:${currentBuild.currentResult}-${BUILD_NUMBER}: ${env.JOB_NAME}",
 					body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\n.Check the attachement to view the details."
 					}
